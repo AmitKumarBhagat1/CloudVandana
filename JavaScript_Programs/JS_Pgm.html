@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Every word</title>
+</head>
+<body>
+    <h1>Reverse Every Word Of the Given Sentence</h1><hr>
+
+    <script>
+        const str3=" This is a sunny day";              // Taking a sentence as an input
+
+        document.writeln("Given Sentence : "+str3);
+
+        let arr=str3.split(" ");                        //Cunverted input sentence into array
+
+        let revstr3="";                                 // crating a new variable to store the reversed sentence
+
+       
+       // document.writeln(arr.length);                   print total length of the array
+
+        for(let j=0;j<arr.length;j++)                   //Taking array element one by one using index of the Array
+        {
+            let x=arr[j]                                 //Storing array element in a temporary variable to perform reverse operation
+         
+             for(var k=x.length-1;k>=0;k--)              //Iterating temporary variable from last to first
+            {
+            revstr3+=x.charAt(k);                        //Storing charactor one by one
+            }
+          revstr3+=" ";                                   //creating Space between required element
+        }
+        document.writeln("|| Reversed Sentence : ")
+        document.writeln(revstr3);                        //printing reversed sentence
+
+        
+    </script>
+
+        <hr><h1>Sort the Array in Descending Order(Inbuilt Method)</h1> <hr>
+
+        <script>
+        const points = [40, 100, 1, 5, 25, 10];
+        let as=  points.sort(function(a, b){return b - a});
+        document.writeln(as);
+    
+    </script>
+     <hr><h1>Sort the Array in Descending Order(User defined Method)</h1> <hr>
+    <script>
+        let arr2=[10,85,55,3,90,77,20];
+        document.writeln("Before Sorted :" ,arr2);
+
+        for(let i=0;i<arr2.length;i++)
+        {
+            for (let j = i+1; j < arr2.length; j++)
+            {
+                if(arr2[i] < arr2[j])
+                {
+                    let temp=arr2[i];
+                    arr2[i]=arr2[j];
+                    arr2[j]=temp;
+                }
+           
+            }
+        }
+        document.writeln("||  After Sorting : "+arr2);
+    </script>
+
+    </body>
+</html>

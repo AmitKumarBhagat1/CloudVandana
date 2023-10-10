@@ -1,0 +1,92 @@
+body{background-color: rgb(231, 245, 205);}
+.container{
+   
+    display: flex;
+   
+    height: 100%;
+    width: 100%;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    margin-right: 300px;
+}
+.main{
+    margin-right: 120px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border:solid 3px black;
+    border-radius: 5px;
+    background-color: rgba(75, 25, 25, 0.256);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+form label{
+    color: maroon;
+}
+form input{
+    border-radius: 3px;
+}
+
+form [name="fn"]{
+    height: 20px;
+    width: 150px;
+}
+form [name="ln"]{
+    height: 20px;
+    width: 150px;
+}
+form [name="mail"]{
+    height: 20px;
+    width: 315px;
+}
+form [name="dob"]{
+    height: 20px;
+    width: 270px;
+}
+form [name="gender"]{
+    height: 20px;
+    width: 55px;
+ 
+}
+
+form [name="pro"]{
+    height: 20px;
+    width: 290px;
+}
+form select{
+    height: 20px;
+    width: 65px;
+    border-radius: 5px;
+}
+form [name="mob"]{
+    height: 20px;
+    width: 155px;
+}
+.btn{
+    height: 30px;
+    width: 150px;
+    color: rgb(241, 229, 229);
+    background-color: dimgrey;
+    border-radius: 5px;
+    margin-right: 70px;
+}
+.sub{
+    height: 30px;
+    width: 150px;
+    color: rgb(241, 229, 229);
+    background-color: dimgrey;
+    border-radius: 5px;
+   
+}
+.footer{
+    color: white;
+    margin-top: 50px;
+}
+span{
+    color: blue;
+}

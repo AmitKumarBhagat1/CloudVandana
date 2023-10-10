@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading"><h1>Survey Form</h1></div>
+        
+        <div class="main">
+            <form id="surveyForm">
+                <label>Name:</label>
+                <input type="text" name="fn" placeholder="First Name" required>
+
+                <input type="text" name="ln" placeholder="Last Name" required>     <br><br>
+
+                <label>Email:</label>
+                <input type="email" name="mail" placeholder="abc@gmail.com" required>     <br><br>
+
+                <label>Date of Birth:</label>
+                <input type="date" name="dob"  required>     <br><br>
+
+                <label>Gender:</label>
+                <input type="checkbox" name="gender" value="Male">Male 
+                <input type="checkbox" name="gender" value="Female">Female  
+                <input type="checkbox" name="gender" value="Other">Other    <br> <br> 
+                
+                <label>Profession:</label>
+                <input type="text" name="pro"  required>     <br><br>
+
+                <label>Country:</label>
+                <select>
+                    <option value="">India</option>
+                    <option value="">Rusia</option>
+                    <option value="">Nepal</option>
+                    <option value="">USA</option>
+                </select>
+
+                <label>Mobile No.:</label>
+                <input type="tel" name="mob" placeholder="9876543210"  required>     <br><br>
+
+                <button onclick="resetForm()" class="btn">Reset</button>
+                <input type="submit"  class="sub">
+            </form>
+            <div class="footer">
+                <h6>@2023 Customer Survey Form. All rights Reserved | Design by <span>Amit Kr. Bhagat</span></h6>
+            </div>
+        </div>
+    </div>
+  
+
+
+    <script>
+        function resetForm()
+        {
+            document.getElementById("surveyForm").reset();
+        }
+    </script>
+</body>
+</html>
